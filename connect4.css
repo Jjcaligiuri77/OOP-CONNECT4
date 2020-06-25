@@ -1,0 +1,107 @@
+.piece-animation {
+  animation-name: pulse;
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(-320px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.td-animation {
+  animation-name: transparent;
+}
+@keyframes transparent {
+  0% {
+    overflow: visible;
+  }
+  25% {
+  }
+  42% {
+  }
+  62% {
+  }
+  85% {
+    overflow: hidden;
+  }
+}
+
+#board td {
+  background-color: #0e0707;
+  border: solid 2px rgb(250, 243, 243);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+#column-top td {
+  border: dashed 1.5px rgb(146, 143, 143);
+  cursor: crosshair;
+}
+
+header {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.head {
+  font-weight: 600;
+  font-variant: normal;
+  font-size: 3.5rem;
+}
+
+#board {
+  background-color: #e0cf30;
+  border-radius: 15% 15% 2% 2%;
+  padding: 20px 20px 20px 20px;
+}
+
+#game {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.piece {
+  margin: auto;
+  border-radius: 100%;
+  width: 90%;
+  height: 90%;
+  animation-iteration-count: 1;
+  animation-duration: 1.4s;
+}
+
+#symbol {
+  text-align: center;
+  color: yellow;
+}
+
+#divvy {
+  text-align: center;
+}
+
+#column-top td:hover {
+  background-image: url("EARTH.jpg");
+	background-size: 80px 65px;
+}
+
+.head{
+  color: yellow
+}
+
+h3{
+  color:yellow;
+  text-align: center;
+  font-size: 45px
+}
